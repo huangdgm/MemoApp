@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="App3.MemoItemPage" x:Name="page">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Name" />
+        <Entry Text="{Binding Source={x:Reference page}, Path=MemoItem.Name}" Placeholder="Memo content here..." />
+        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center">-->
+        <Button VerticalOptions="CenterAndExpand" Image="record.png" Clicked="OnRecognizeSpeechButtonClicked" />
+            <!--</StackLayout>-->
+        <Button VerticalOptions="CenterAndExpand" Text="Save" Clicked="OnSaveClicked" />
+        <Button VerticalOptions="CenterAndExpand" Text="Delete" Clicked="OnDeleteClicked" />
+        <Button VerticalOptions="CenterAndExpand" Text="Cancel" Clicked="OnCancelClicked" />
+    </StackLayout>
+</ContentPage>
